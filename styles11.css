@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+    --background-body: #121216;
+    --background-button: #01B4B4;
+    --branco: #FFFFFF;
+    --text-color: #7C7C8A;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-body);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+/*
+    Para compreender o que o padding: 1.9rem 2.4rem; faz, lembre-se que,
+    tanto o padding, quando o margin, tem acesso as propriedades: 
+    top, bottom, left e right. 
+
+    Desta forma, o padding: 1.9rem 2.4rem; adiciona um espaçamento
+    superior(top) e inferior(bottom) de 1.9rem e esquerda(left) e direita(right) de 2.4rem.
+    
+    1.9rem (conversão de 19px para REM)
+    2.4rem (conversão de 24px para REM)
+    
+    Seria a mesma coisa que fazer:
+        padding-top: 1.9rem;
+        padding-bottom: 1.9rem;
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+
+    E para fazer isso em uma única linha, siga o sentido horário 🕒
+        padding: [top] [right] [bottom] [left];
+    
+    Ou faça o que eu fiz: 
+        padding: [top/bottom] [left/right];
+*/
+
+input {
+    width: 59.2rem;
+    padding: 1.9rem 2.4rem;
+}
+
+textarea {
+    padding: 1.9rem 2.4rem;
+    color: var(--text-color);
+}
+
+/* O cursor: pointer; logo abaixo, faz com que, quando se for passado
+o cursor do mouse, sob algum elemento, ele mude, indicando que ali
+tem um botão clicável.
+
+PS: Ele troca a seta padrão do cursor do mouse de seta para uma "mãozinha" :P
+
+*/
+
+button {
+    background-color: var(--background-button);
+    color: var(--branco);
+    padding: 1.4rem;
+    border: none;
+    cursor: pointer;
+}
