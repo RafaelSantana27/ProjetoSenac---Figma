@@ -182,10 +182,6 @@ button {
 
 /* --------- AREA LOGO DO SITE --------- */
 
-    body{
-        /* background-color: rgb(218, 235, 196); */
-    }
-
     .area--logo {
         display: none;
     }
@@ -203,15 +199,39 @@ button {
     .principal--cards {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        width: 343px;
     }
+
+    .txt-form {
+        font-size: .9rem;
+        line-height: 36.88px;
+        margin: 20px;
+    }
+
+    form {
+        gap: 0.9rem;
+        }
+    
+    input {
+        width: 29.2rem;
+        padding: .9rem 1.4rem;
+    }
+    
+    textarea {
+        padding: .9rem 1.4rem;
+    }
+    
+    button {
+        padding: 1.0rem;
+    }
+    
 
 }
 
 @media (width >= 768.1px) and (width <= 1230px) {
     body{
-        background-color: rgb(214, 139, 180);
+        /* background-color: rgb(214, 139, 180); */
     }
 }
 
